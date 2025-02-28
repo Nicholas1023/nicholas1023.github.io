@@ -8,16 +8,20 @@ body {
   font-family: 'Arial', sans-serif;
   height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
 nav {
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   background-color: #f4f7fa;
+  padding: 10px;
 }
 
 nav img {
@@ -33,11 +37,13 @@ nav p {
 
 main {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex: 1;
-  background-color: #fff;
   justify-content: center;
+  flex: 1; 
+  background-color: #fff;
   text-align: center;
+  margin-top: 60px;
 }
 
 main img {
@@ -48,6 +54,7 @@ main img {
 footer {
   text-align: center;
   background-color: #f4f7fa;
+  padding: 20px;
 }
 
 footer p {
