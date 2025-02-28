@@ -54,7 +54,6 @@ main {
   flex: 1; 
   background-color: #fff;
   text-align: center;
-  margin-top: 40px;
   padding: 10px;
 }
 
@@ -63,11 +62,12 @@ main h1, main h2, main p {
 }
 
 .intro-icon {
+  margin-top: 40;
   background-color: #f4f7fa;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 240px;
 }
 
