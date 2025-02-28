@@ -62,9 +62,14 @@ main h1, main h2, main p {
   padding: 10px;
 }
 
-main img {
-  height: 150px;
-  width: 150px;
+.intro-icon {
+  background-color: #f4f7fa;
+}
+
+.intro-icon img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
 }
 
 footer {
