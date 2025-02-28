@@ -9,6 +9,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: 60px;
 }
 
 nav {
@@ -40,8 +41,9 @@ nav a {
   text-decoration: none;
   margin: 0;
   padding: 0;
-  display: inline-block;
+  display: inline-flex;
   color: #000;
+  align-items: center;
 }
 
 main {
