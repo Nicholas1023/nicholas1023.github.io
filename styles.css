@@ -36,6 +36,14 @@ nav p {
   font-weight: bold;
 }
 
+nav a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  color: #000;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -61,4 +69,8 @@ footer {
   text-align: center;
   background-color: #f4f7fa;
   padding: 20px;
+}
+
+footer a, main a {
+  text-decoration: none;
 }
