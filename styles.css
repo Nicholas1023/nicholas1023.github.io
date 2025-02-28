@@ -55,6 +55,7 @@ main {
   background-color: #fff;
   text-align: center;
   padding-bottom: 10px;
+  padding-top: 220px;
 }
 
 main h1, main h2, main p {
@@ -68,6 +69,10 @@ main h1, main h2, main p {
   align-items: center;
   width: 100vw;
   height: 240px;
+  position: fixed;
+  top: 0;
+  margin-top: 40px;
+  z-index: 900;
 }
 
 .intro-icon img {
