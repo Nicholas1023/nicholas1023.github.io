@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 body {
@@ -60,7 +62,7 @@ nav a {
   align-items: center;
 }
 
-#ModeToggle {
+nav button {
   position: fixed;
   top: 10px;
   right: 10px;
@@ -70,26 +72,17 @@ nav a {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  background-color: #0077cc;
+  background-color: #007bff;
   color: white;
   transition: background 0.3s, transform 0.2s;
 }
 
-#ModeToggle:hover {
-  background-color: #005fa3;
+nav button:hover {
+  background-color: #0056b3;
 }
 
-#ModeToggle:active {
+nav button:active {
   transform: scale(0.95);
-}
-
-.dark-mode #ModeToggle {
-  background-color: #ffcc00;
-  color: black;
-}
-
-.dark-mode #ModeToggle:hover {
-  background-color: #e6b800;
 }
    
 .dark-mode nav p,
@@ -103,7 +96,7 @@ main {
   align-items: center;
   justify-content: center;
   flex: 1;
-  background-color: #f4f7fa;
+  background-color: #ffffff;
   text-align: center;
   padding-bottom: 10px;
   transition: background 0.3s, color 0.3s;
@@ -149,12 +142,23 @@ footer {
   background-color: #1e2227;
 }
 
-footer a,
-main a {
-  text-decoration: none;
+footer a, main a {
+  color: #000000;
+  text-decoration: underline;
 }
 
+.dark-mode footer a, main a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+    
 footer a:hover,
 main a:hover {
+  color: #00bfff;
+  text-decoration: underline;
+}
+
+.dark-mode footer a:hover, main a:hover {
+  color: #f4f7fa;
   text-decoration: underline;
 }
