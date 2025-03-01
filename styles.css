@@ -50,6 +50,7 @@ nav img {
   height: 30px;
   width: 30px;
   margin-right: 10px;
+  border-radius: 20px;
 }
 
 nav p {
@@ -83,10 +84,6 @@ nav button {
 
 nav button:hover {
   background-color: #0056b3;
-}
-
-nav button:active {
-  transform: scale(0.95);
 }
    
 .dark-mode nav p,
