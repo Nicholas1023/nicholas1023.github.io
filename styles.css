@@ -79,7 +79,6 @@ nav button {
   cursor: pointer;
   background-color: #007bff;
   color: white;
-  transition: background 0.3s, transform 0.2s;
 }
 
 nav button:hover {
