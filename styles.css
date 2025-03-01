@@ -10,6 +10,14 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 40px;
+  color: #000000;
+  background-color: #f4f7fa;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  color: #e0e0e0;
+  background-color: #121212;
 }
 
 nav {
@@ -24,6 +32,12 @@ nav {
   background-color: #f4f7fa;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #000000;
+}
+
+.dark-mode nav {
+  color: #ffffff;
+  background-color: #1e2227;
 }
 
 nav img {
@@ -46,18 +60,62 @@ nav a {
   align-items: center;
 }
 
+#ModeToggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #0077cc;
+  color: white;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#ModeToggle:hover {
+  background-color: #005fa3;
+}
+
+#ModeToggle:active {
+  transform: scale(0.95);
+}
+
+.dark-mode #ModeToggle {
+  background-color: #ffcc00;
+  color: black;
+}
+
+.dark-mode #ModeToggle:hover {
+  background-color: #e6b800;
+}
+   
+.dark-mode nav p,
+.dark-mode nav a {
+  color: #ffffff;
+}
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex: 1; 
-  background-color: #fff;
+  flex: 1;
+  background-color: #f4f7fa;
   text-align: center;
   padding-bottom: 10px;
+  transition: background 0.3s, color 0.3s;
 }
 
-main h1, main h2, main p {
+.dark-mode main {
+  background-color: #121212;
+}
+
+main h1,
+main h2,
+main p {
   padding: 10px;
 }
 
@@ -69,6 +127,10 @@ main h1, main h2, main p {
   width: 100vw;
   height: 240px;
   z-index: 900;
+}
+
+.dark-mode .intro-icon {
+  background-color: #1e2227;
 }
 
 .intro-icon img {
@@ -83,10 +145,16 @@ footer {
   padding: 20px;
 }
 
-footer a, main a {
+.dark-mode footer {
+  background-color: #1e2227;
+}
+
+footer a,
+main a {
   text-decoration: none;
 }
 
-footer a:hover, main a:hover {
+footer a:hover,
+main a:hover {
   text-decoration: underline;
 }
