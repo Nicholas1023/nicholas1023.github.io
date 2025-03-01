@@ -145,7 +145,7 @@ footer a, main a {
   text-decoration: underline;
 }
 
-.dark-mode footer a, main a {
+.dark-mode footer a, .dark-mode main a {
   color: #ffffff;
   text-decoration: underline;
 }
