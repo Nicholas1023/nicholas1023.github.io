@@ -21,11 +21,6 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
-.dark-mode {
-  color: #e0e0e0;
-  background-color: #121212;
-}
-
 nav {
   position: fixed;
   top: 0;
@@ -39,11 +34,6 @@ nav {
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   color: #000000;
-}
-
-.dark-mode nav {
-  color: #ffffff;
-  background-color: #1e2227;
 }
 
 nav img {
@@ -86,11 +76,6 @@ nav button:hover {
   background-color: #0056b3;
 }
    
-.dark-mode nav p,
-.dark-mode nav a {
-  color: #ffffff;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -101,10 +86,6 @@ main {
   text-align: center;
   padding-bottom: 10px;
   transition: background 0.3s, color 0.3s;
-}
-
-.dark-mode main {
-  background-color: #121212;
 }
 
 main h1,
@@ -123,10 +104,6 @@ main p {
   z-index: 900;
 }
 
-.dark-mode .intro-icon {
-  background-color: #1e2227;
-}
-
 .intro-icon img {
   height: 150px;
   width: 150px;
@@ -139,27 +116,13 @@ footer {
   padding: 20px;
 }
 
-.dark-mode footer {
-  background-color: #1e2227;
-}
-
 footer a, main a {
   color: #000000;
   text-decoration: underline;
 }
-
-.dark-mode footer a, .dark-mode main a {
-  color: #ffffff;
-  text-decoration: underline;
-}
-    
+  
 footer a:hover,
 main a:hover {
   color: #00bfff;
-  text-decoration: underline;
-}
-
-.dark-mode footer a:hover, main a:hover {
-  color: #f4f7fa;
   text-decoration: underline;
 }
