@@ -88,9 +88,9 @@ main {
   transition: background 0.3s, color 0.3s;
 }
 
-main h1,
 main h2,
-main p {
+main p,
+main ul {
   padding: 10px;
 }
 
