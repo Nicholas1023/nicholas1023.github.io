@@ -90,8 +90,7 @@ main {
 
 main h1,
 main h2,
-main p,
-main ul {
+main p {
   padding: 10px;
 }
 
