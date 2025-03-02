@@ -9,7 +9,8 @@ html {
   overflow-y: auto;
   margin: 0;
   height: 100vh;
-  
+}
+
 body {
   font-family: 'Arial', sans-serif;
   height: 100vh;
@@ -84,8 +85,7 @@ main {
   flex: 1;
   background-color: #ffffff;
   text-align: center;
-  padding-bottom: 10px;
-  transition: background 0.3s, color 0.3s;
+  width: 100%;
 }
 
 main h1,
@@ -129,11 +129,9 @@ main a:hover {
 
 /* Additional styles for 404.html */
 .button {
-  position: absolute;
-  top: 50%;
-  right: 10px; 
-  transform: translateY(-50%);
-  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  margin: 20px auto; 
   font-size: 16px;
   font-weight: bold;
   border: none;
@@ -141,8 +139,16 @@ main a:hover {
   cursor: pointer;
   background-color: #007bff;
   color: white;
+  padding: 10px 20px;
+  text-align: center;
+  width: max-content;
 }
 
 .button:hover {
   background-color: #0056b3;
+}
+
+.button-container {
+  text-align: center;
+  width: 100%;
 }
