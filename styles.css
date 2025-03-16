@@ -18,7 +18,7 @@ body {
   flex-direction: column;
   padding-top: 40px;
   color: #000000;
-  background-color: #f4f7fa;
+  background-color: #e8fff8;
   transition: background 0.3s, color 0.3s;
 }
 
@@ -31,7 +31,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: #f4f7fa;
+  background-color: #e8fff8;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   color: #000000;
@@ -76,7 +76,7 @@ main p {
 }
 
 .intro-icon {
-  background-color: #f4f7fa;
+  background-color: #e8fff8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +93,7 @@ main p {
 
 footer {
   text-align: center;
-  background-color: #f4f7fa;
+  background-color: #e8fff8;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
