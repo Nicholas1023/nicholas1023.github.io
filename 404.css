@@ -64,31 +64,24 @@ main {
   align-items: center;
   justify-content: center;
   flex: 1;
-  background-color: #ffffff;
+  background-color: #e8f5ff;
   text-align: center;
   width: 100%;
 }
 
-main h1,
 main h2,
 main p {
   padding: 10px;
 }
 
-.intro-icon {
-  background-color: #e8f5ff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 270px;
-  z-index: 900;
+main h1 {
+  color: #fa6257;
+  font-size: 6em;
+  padding: 0px;
 }
 
-.intro-icon img {
-  height: 150px;
-  width: 150px;
-  border-radius: 20px;
+main h2 {
+  font-size: 2.5em;
 }
 
 footer {
@@ -109,17 +102,32 @@ main a:hover {
   text-decoration: underline;
 }
 
-@keyframes float {
-  0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
+.button {
+  text-decoration: none;
+  display: block;
+  margin: 20px auto; 
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  width: max-content;
 }
 
-main, footer {
-  animation: float 0.8s ease-out forwards;
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button-container {
+  text-align: center;
+  width: 100%;
+}
+
+.code-effect {
+  font-family: 'Courier New', monospace;
+  display: inline-block;
 }
