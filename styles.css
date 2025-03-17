@@ -93,9 +93,9 @@ main p {
 
 footer {
   text-align: center;
-  background-color: #d1e9fd;
+  background-color: #e8f5ff;
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 footer a, main a {
