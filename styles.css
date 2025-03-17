@@ -109,6 +109,21 @@ main a:hover {
   text-decoration: underline;
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+main, footer {
+  animation: float 2s ease-in-out forwards;
+}
+
 /* Additional styles for 404.html */
 .button {
   text-decoration: none;
