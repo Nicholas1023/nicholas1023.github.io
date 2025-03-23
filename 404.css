@@ -126,7 +126,6 @@ main a:hover {
   width: 100%;
 }
 
-.code-effect {
-  font-family: 'Courier New', monospace;
+.not-found {
   display: inline-block;
 }
