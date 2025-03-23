@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /icon-white.png # The only difference is the background colour, hence there is no need to crawl this image.
+
+Sitemap: https://nicholas1023.github.io/sitemap.xml
