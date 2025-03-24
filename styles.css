@@ -8,12 +8,12 @@ html {
   overflow-x: hidden;
   overflow-y: auto;
   margin: 0;
-  height: 100vh;
+  height: 100dvh;
 }
 
 body {
   font-family: 'Arial', sans-serif;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   padding-top: 40px;
@@ -80,7 +80,7 @@ main p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100dvw;
   height: 270px;
   z-index: 900;
 }
