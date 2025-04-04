@@ -29,27 +29,46 @@ nav {
   right: 0;
   z-index: 1000;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-start;
   background-color: #d1e9fd;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   color: #000000;
 }
 
-nav img {
+.site-title, .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links ul {
+  list-style: none;
+}
+
+.nav-links li {
+  list-style: none;
+  float: left;
+  padding: 5px;
+}
+
+.nav-links li:hover {
+  font-size: 20px;
+}
+
+.site-title img {
   height: 30px;
   width: 30px;
   margin-right: 10px;
   border-radius: 20px;
 }
 
-nav p {
+.site-title p, .nav-links p {
   font-size: 20px;
   font-weight: bold;
 }
 
-nav a {
+.site-title a, .nav-links a {
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -62,16 +81,18 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-top: 50px;
   flex: 1;
   background-color: #ffffff;
   text-align: center;
   width: 100%;
 }
 
-main h1,
-main h2,
-main p {
+main li {
+  text-align: left;
+}
+
+main h1, main h2, main p {
   padding: 10px;
 }
 
@@ -103,8 +124,7 @@ footer a, main a {
   text-decoration: underline;
 }
   
-footer a:hover,
-main a:hover {
+footer a:hover, main a:hover {
   color: #00bfff;
   text-decoration: underline;
 }
