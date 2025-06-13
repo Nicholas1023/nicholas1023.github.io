@@ -35,6 +35,10 @@ img {
   margin: 16px;
 }
 
+.site-title h1 {
+  font-size: 1rem;
+}
+
 .links {
   display: flex;
   align-items: center;
