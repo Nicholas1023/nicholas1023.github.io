@@ -50,9 +50,8 @@ img {
 }  
 
 main {
-  max-width: 100ch;
-  margin: auto;
   text-align: center;
+  margin: 0;
 }
 
 pre {
@@ -76,4 +75,10 @@ pre {
   text-decoration: none;
   color: #ffffff;
   background-color: #003eab;
+}
+
+@media (max-width: 600px) {
+  pre {
+    width: calc(100dvw - 20px);
+  }
 }
