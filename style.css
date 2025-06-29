@@ -19,6 +19,30 @@ a:hover {
   color: #619cfa;
 }
 
+button {
+  cursor: url(cursor-click.png), auto;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 3ch;
+}
+
+.search, .title-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+input {
+  border-radius: 10px;
+  border: 1px solid grey;
+  height: 3.5ch;
+  padding-left: 10px;
+  cursor: url(cursor-text.png), auto;
+}
+
 img {
   border-radius: 10px;
   border: 1px solid black;
@@ -30,7 +54,7 @@ img {
 .site-title {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   border-bottom: 1px solid black;
   margin: 16px;
 }
@@ -41,12 +65,12 @@ img {
 
 .links {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-start;
 } 
 
 .links a {
   text-decoration: none;
+  padding-left: 15px;
 }  
 
 main {
@@ -77,8 +101,17 @@ pre {
   background-color: #003eab;
 }
 
+.result {
+  background-color: #fff87a;
+  border-radius: 5px;
+}
+
 @media (max-width: 600px) {
   pre {
     width: calc(100dvw - 20px);
+  }
+
+  .site-title {
+    flex-direction: column;
   }
 }

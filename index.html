@@ -10,19 +10,27 @@
   <body>
     <nav>
       <div class="site-title">
-        <h1>Nicholas's Website!</h1>
-        <img src="icon.png" alt="My icon">
+        <a class="title-content" href="/">
+          <img src="icon.png" alt="My icon" style="margin-right: 20px;">
+          <h1>Nicholas's Website!</h1>
+        </a>
+        <form class="search" id="search">
+          <p id="notFound" style="display: none; color: #fa2020; margin-right: 10px;">Not found!</p>
+          <input type="text" placeholder="Search" id="search-input">
+          <button type="submit">&#128269;</button>
+        </form>
       </div>
       <div class="links">
-        <a href="source.html">View the source!</a>
         <a href="projects.html">View my projects!</a>
       </div>
     </nav>
-    <main>
-      <h2>Hello! Welcome to my website!</h2>
-      <p>I am Nicholas and my passion is programming and designing PCBs!</p>
-      <p>This is a PCB I created, which is a 1-bit, logic gate computer with discrete transistors as its processor. <a href="https://github.com/Nicholas1023/computer">View repository</a></p>
+    <main id="main">
+      <h2 id="1">Hello! Welcome to my website!</h2>
+      <p id="2">I am Nicholas, and my passion is programming and designing PCBs! </p>
+      <p id="3">This is a PCB I created, which is a 1-bit, logic gate computer with discrete transistors as its processor.</p>
+      <p><a href="https://github.com/Nicholas1023/computer">View repository!</a></p>
       <img style="width: 300px; height: 274px; border-radius: 0; border: 0" src="3D_View.png" alt="A printed circuit board">
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

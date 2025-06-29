@@ -10,23 +10,31 @@
   <body>
     <nav>
       <div class="site-title">
-        <h1>Nicholas's Website!</h1>
-        <img src="icon.png" alt="My icon">
+        <a class="title-content" href="/">
+          <img src="icon.png" alt="My icon" style="margin-right: 20px;">
+          <h1>Nicholas's Website!</h1>
+        </a>
+        <form class="search" id="search">
+          <p id="notFound" style="display: none; color: #fa2020; margin-right: 10px;">Not found!</p>
+          <input type="text" placeholder="Search" id="search-input">
+          <button type="submit">&#128269;</button>
+        </form>
       </div>
       <div class="links">
         <a href="index.html">Go back home</a>
-        <a href="source.html">View the source!</a>
       </div>
     </nav>
-    <main style="text-align: left;">
-      <h2 style="text-align: center;">My Projects!</h2>
+    <main id="main" style="text-align: left;">
+      <h2 id="1" style="text-align: center;">My Projects!</h2>
       <ul>
         <li>
-          <h3><a href="https://github.com/Nicholas1023/computer" style="text-decoration: none;">1-bit Logic Gate Computer</a></h3>
+          <h3 id="2">1-bit Logic Gate Computer</h3>
           <img style="width: 225px; height: 205.5px; border-radius: 0; border: 0" src="3D_View.png" alt="My PCB">
-          <p>This is my first PCB, A 1-bit computer that uses NOR and NOT gates made from 3 transistors as its processor, 3 Push buttons as input, and 2 LEDs as output.</p>
+          <p id="3">This is my first PCB, A 1-bit computer that uses NOR and NOT gates made from 3 transistors as its processor, 3 Push buttons as input, and 2 LEDs as output.</p>
+          <a href="https://github.com/Nicholas1023/computer">View repository!</a>
         </li>
       </ul>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
