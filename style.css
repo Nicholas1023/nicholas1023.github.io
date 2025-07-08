@@ -51,6 +51,18 @@ img {
   margin-bottom: 10px;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #a8d8ff;
+}
+
+footer * {
+  margin: 10px;
+  font-size: 14px;
+}
+
 .site-title {
   display: flex;
   align-items: center;
@@ -75,7 +87,8 @@ img {
 
 main {
   text-align: center;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 pre {
