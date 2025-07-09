@@ -56,6 +56,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   background-color: #a8d8ff;
+  bottom: 0;
 }
 
 footer * {
@@ -89,6 +90,7 @@ main {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  flex: 1;
 }
 
 pre {
