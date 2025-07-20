@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /404.html
+Disallow: /cursor.png
+Disallow: /cursor-click.png
+Disallow: /cursor-text.png
+
+Sitemap: https://nicholas1023.github.io/sitemap.xml
