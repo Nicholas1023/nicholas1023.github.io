@@ -94,14 +94,6 @@ main {
   flex: 1;
 }
 
-pre {
-  background-color: #fafafa;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid black;
-  overflow-y: auto;
-}
-
 .go-home {
   padding: 10px 20px;
   background-color: #008afb;

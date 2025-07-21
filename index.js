@@ -4,8 +4,6 @@ function search() {
     const content2 = document.getElementById("2");
     const content3 = document.getElementById("3");
     const content4 = document.getElementById("4");
-    const content5 = document.getElementById("5");
-    const content6 = document.getElementById("6");
     const notFound = document.getElementById("notFound");
     notFound.style.display = "none";
     reset(content1, content2, content3, content4, content5, content6)
