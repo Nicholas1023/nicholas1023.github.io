@@ -102,19 +102,19 @@ pre {
   overflow-y: auto;
 }
 
-.go-back-home {
+.go-home {
   padding: 10px 20px;
-  background-color: #035efc;
+  background-color: #008afb;
+  color: white;
   border-radius: 10px;
-  color: #ffffff;
   text-decoration: none;
   text-align: center;
 }
 
-.go-back-home:hover {
+.go-home:hover {
   text-decoration: none;
-  color: #ffffff;
-  background-color: #003eab;
+  color: white;
+  background-color: #005ca8;
 }
 
 .result {
@@ -152,5 +152,39 @@ pre {
 
   span {
     color: black;
+  }
+
+  ::-webkit-scrollbar {
+    background-color: #05223a;
+    width: 15px;
+    border-left: 1px solid rgb(100, 100, 100);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #447bfc;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #619cfa;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  ::-webkit-scrollbar {
+    background-color: #cae2f5;
+    width: 15px;
+    border-left: 1px solid rgb(50, 50, 50);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #a8d8ff;
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #72c0ff;
   }
 }
