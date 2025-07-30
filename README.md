@@ -5,6 +5,7 @@ Visit my website at <a href="https://nicholas1023.github.io">https://nicholas102
 ## Pages
 - <a href="https://nicholas1023.github.io">Homepage</a>
 - <a href="https://nicholas1023.github.io/projects.html">Projects</a>
+- <a href="https://nicholas1023.github.io/api/index.html">API Documentation</a>
 - <a href="https://nicholas1023.github.io/404.html">404 Not Found page</a>
 
 ## Website Features
@@ -14,3 +15,4 @@ Visit my website at <a href="https://nicholas1023.github.io">https://nicholas102
 - Responsive elements
 - Search bar
 - Uses system theme
+- API Documentation
