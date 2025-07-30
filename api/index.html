@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas's Website - API Documentation</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <nav>
+      <div class="site-title">
+        <a class="title-content" href="/">
+          <img src="/icon.png" alt="My icon" style="margin-right: 20px;">
+          <h1>Nicholas's Website!</h1>
+        </a>
+        <form class="search" id="search">
+          <p id="notFound" style="display: none; color: #fa2020; margin-right: 10px;">Not found!</p>
+          <input type="text" placeholder="Search" id="search-input">
+          <button type="submit">&#128269;</button>
+        </form>
+      </div>
+      <div class="links">
+        <a href="/index.html">Go home</a>
+        <a href="/projects.html">Projects</a>
+      </div>
+    </nav>
+    <main id="main" style="text-align: left; max-width: 90ch;">
+      <h2 id="1" style="text-align: center;">Nicholas1023 API Documentation</h2>
+      <p id="2">The Nicholas1023 API provides information on my projects, for example, names and project websites in XML format.</p>
+      <p id="3">Base URL: <code class="code">https://nicholas1023.github.io/api/</code></p>
+      <p id="4">Endpoints: <code class="code">1</code>, <code class="code">2</code></p>
+      <p id="5">Response format:</p>
+      <pre><code id="6">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;data xmlns="http://nicholas1023.github.io/api"&gt;
+    &lt;status&gt;HTTP Status Code&lt;/status&gt;
+    &lt;name&gt;Project name&lt;/name&gt;
+    &lt;n&gt;Project number&lt;/n&gt;
+    &lt;l&gt;Project website&lt;/l&gt;
+&lt;/data&gt;</code></pre>
+    </main>
+    <footer>
+      <p style="margin-left: 20px;">Copyright &copy; 2025 Nicholas Lim.</p>
+      <img src="/icon.png" style="width: 35px; height: 35px; margin: 5px; margin: 10px;" alt="My icon">
+    </footer>
+    <script src="/projects.js"></script>
+  </body>
+</html>

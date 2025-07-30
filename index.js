@@ -6,7 +6,7 @@ function search() {
     const content4 = document.getElementById("4");
     const notFound = document.getElementById("notFound");
     notFound.style.display = "none";
-    reset(content1, content2, content3, content4, content5, content6)
+    reset(content1, content2, content3, content4)
     if (content1.textContent.toLowerCase().includes(term)) {
         content1.innerHTML = `<span class="result">${content1.innerHTML}</span>`;
     } else if (content2.textContent.toLowerCase().includes(term)) {

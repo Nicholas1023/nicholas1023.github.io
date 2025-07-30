@@ -114,6 +114,13 @@ main {
   border-radius: 5px;
 }
 
+pre, .code {
+  background-color: lightgray;
+  border: 1px solid grey;
+  padding: 3px;
+  border-radius: 5px;
+}
+
 @media (max-width: 600px) {
   pre {
     width: calc(100dvw - 20px);
@@ -142,7 +149,7 @@ main {
     border-bottom: 1px solid white;
   }
 
-  span {
+  span, code {
     color: black;
   }
 
