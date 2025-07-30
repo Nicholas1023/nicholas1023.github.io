@@ -4,6 +4,5 @@ Disallow: /cursor.png
 Disallow: /cursor-click.png
 Disallow: /cursor-text.png
 Disallow: /api/
-Allow: /api/index.html
 
 Sitemap: https://nicholas1023.github.io/sitemap.xml
