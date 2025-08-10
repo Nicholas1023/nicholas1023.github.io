@@ -24,3 +24,14 @@ Visit my website at <a href="https://nicholas1023.github.io">https://nicholas102
 ### Endpoints
 - <a href="https://nicholas1023.github.io/api/v1/1">https://nicholas1023.github.io/api/v1/1</a>
 - <a href="https://nicholas1023.github.io/api/v1/2">https://nicholas1023.github.io/api/v1/2</a>
+
+### Response Format
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://nicholas1023.github.io">
+    <status>HTTP status code</status>
+    <name>Project name</name>
+    <n>Project number</n>
+    <l>Project website</l>
+</data>
+```
