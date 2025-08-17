@@ -75,6 +75,7 @@ nav {
   justify-content: space-between;
   border-bottom: 1px solid black;
   margin: 5px;
+  margin-bottom: 10px;
 }
 
 .site-title h1 {
