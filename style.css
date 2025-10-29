@@ -94,7 +94,7 @@ main {
   flex: 1;
 }
 
-.go-home, .copy {
+.go-home {
   cursor: pointer;
   padding: 10px 20px;
   background-color: #008afb;
@@ -104,7 +104,7 @@ main {
   text-align: center;
 }
 
-.go-home:hover, .copy:hover {
+.go-home:hover {
   text-decoration: none;
   color: white;
   background-color: #005ca8;
@@ -120,7 +120,7 @@ main {
   border: 0;
 }
 
-code, pre, .code {
+pre, .code {
   overflow: hidden;
   background-color: lightgray;
   border: 1px solid grey;
@@ -142,10 +142,6 @@ code, pre, .code {
     width: 70%;
     height: 70%;
   }
-
-  code {
-    display: none;
-  }
 }
 
 ::-webkit-scrollbar {
@@ -163,4 +159,3 @@ code, pre, .code {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #619cfa;
 }
-
