@@ -44,8 +44,6 @@ input {
 img {
   border-radius: 10px;
   border: 1px solid black;
-  width: 50px;
-  height: 50px;
   margin-bottom: 10px;
 }
 
@@ -96,16 +94,16 @@ main {
   flex: 1;
 }
 
-.go-home {
+.go-home, .copy {
   padding: 10px 20px;
   background-color: #008afb;
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   text-decoration: none;
   text-align: center;
 }
 
-.go-home:hover {
+.go-home:hover, .copy:hover {
   text-decoration: none;
   color: white;
   background-color: #005ca8;
@@ -116,11 +114,18 @@ main {
   border-radius: 5px;
 }
 
-pre, .code {
+.preview {
+  border-radius: 0;
+  border: 0;
+}
+
+code, pre, .code {
+  overflow: hidden;
   background-color: lightgray;
   border: 1px solid grey;
   padding: 3px;
   border-radius: 5px;
+  color: black
 }
 
 @media (max-width: 600px) {
@@ -130,6 +135,15 @@ pre, .code {
 
   .site-title {
     flex-direction: column;
+  }
+
+  .preview {
+    width: 70%;
+    height: 70%;
+  }
+
+  code {
+    display: none;
   }
 }
 
