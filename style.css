@@ -95,6 +95,7 @@ main {
 }
 
 .go-home, .copy {
+  cursor: pointer;
   padding: 10px 20px;
   background-color: #008afb;
   color: white;
