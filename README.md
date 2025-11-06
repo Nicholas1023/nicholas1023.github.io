@@ -5,7 +5,6 @@ Visit my website at <a href="https://nicholas1023.github.io">https://nicholas102
 ## Pages
 - <a href="https://nicholas1023.github.io">Homepage</a>
 - <a href="https://nicholas1023.github.io/projects.html">Projects</a>
-- <a href="https://nicholas1023.github.io/projects.html">Downloads</a>
 - <a href="https://nicholas1023.github.io/404.html">404 Not Found page</a>
 
 ## Website Features
