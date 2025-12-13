@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas's Website - Projects</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <div class="site-title">
+        <a class="title-content" href="/">
+          <h1>Nicholas's Website!</h1>
+        </a>
+        <form class="search" id="search">
+          <p id="notFound" style="display: none; color: #fa2020; margin-right: 10px;">Not found!</p>
+          <input type="text" placeholder="Search" id="search-input">
+          <button type="submit">&#128269;</button>
+        </form>
+      </div>
+      <div class="links">
+        <a href="index.html">Go home</a>
+        <a href="projects.html">My Projects</a>
+      </div>
+    </nav>
+    <main id="main" style="text-align: left; max-width: 90ch;">
+      <h2 id="1" style="text-align: center;">My Projects!</h2>
+      <ul>
+        <li>
+          <h3 id="2"><a href="https://github.com/Nicholas1023/computer">1-bit Logic Gate Computer</a></h3>
+          <img style="width: 30%; height: 30%; border-radius: 0; border: 0" src="3D_View.png" alt="My PCB">
+          <p id="3">This is my first PCB, A 1-bit computer that uses NOR and NOT gates made from 3 transistors as its processor, 3 Push buttons as input, and 2 LEDs as output.</p>
+        </li>
+        <li>
+          <h3 id="4"><a href="https://github.com/Nicholas1023/macro-microcontroller">Macro Microcontroller</a></h3>
+          <img style="width: 50%; height: 50%; border-radius: 0; border: 0" src="https://raw.githubusercontent.com/Nicholas1023/macro-microcontroller/main/front.png" alt="Macro Microcontroller">
+          <p id="5">A microcontroller and a macropad combined on a PCB which can be used for controlling GPIO pins or running user programs instead of sending input to your computer as a keyboard.</p>
+        </li>
+      </ul>
+    </main>
+    <script src="projects.js"></script>
+  </body>
+</html>

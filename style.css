@@ -1,0 +1,161 @@
+html, body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'system-ui', sans-serif;
+  background: linear-gradient(#9fd2fb, #a4d0ff);
+  color: black;
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+  min-height: 100dvh;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #004cff;
+}
+
+a:hover {
+  color: #003d9e;
+}
+
+button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 3ch;
+}
+
+.search, .title-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+input {
+  border-radius: 10px;
+  border: 1px solid grey;
+  height: 3.5ch;
+  padding-left: 10px;
+}
+
+img {
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  color: black;
+  padding-bottom: 10px;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+  background-color: #9fd2fb;
+}
+
+nav h1 {
+  padding-left: 10px;
+}
+
+.title-content {
+  color: black;
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+.site-title h1 {
+  font-size: 1.5rem;
+}
+
+.links {
+  display: flex;
+  align-items: flex-start;
+} 
+
+.links a {
+  text-decoration: none;
+  padding-left: 15px;
+}  
+
+main {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1;
+}
+
+.go-home {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #008afb;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.go-home:hover {
+  text-decoration: none;
+  color: black;
+  background-color: #005ca8;
+}
+
+.result {
+  background-color: #b5b158;
+  border-radius: 5px;
+}
+
+.preview {
+  border-radius: 0;
+  border: 0;
+}
+
+pre, .code {
+  overflow: hidden;
+  background-color: lightgray;
+  border: 1px solid grey;
+  padding: 3px;
+  border-radius: 5px;
+  color: black
+}
+
+@media (max-width: 600px) {
+  pre {
+    width: calc(100dvw - 20px);
+  }
+
+  .site-title {
+    flex-direction: column;
+  }
+
+  .preview {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+::-webkit-scrollbar {
+  background-color: #9fd2fb;
+  width: 15px;
+  border-left: 1px solid rgb(100, 100, 100);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5789ff;
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #5c9bff;
+}
