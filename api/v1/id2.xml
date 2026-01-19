@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns="http://nicholas1023.github.io">
+    <project>
+        <id>2</id>
+        <name>1-bit Logic Gate Computer</name>
+        <url>https://github.com/Nicholas1023/computer</url>
+        <desc>A simple 1-bit computer with transistors as the processor, push buttons as input and LEDs as output.</desc>
+    </project>
+</content>

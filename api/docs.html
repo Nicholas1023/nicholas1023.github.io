@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas's Website - API Documentation</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body id="body">
+    <nav>
+      <div class="site-title">
+        <a class="title-content" href="/">
+          <h1>Nicholas's Website!</h1>
+        </a>
+        <form class="search" id="search">
+          <p id="notFound" style="display: none; color: #fa2020; margin-right: 10px;">Not found!</p>
+          <input type="text" placeholder="Search" id="search-input">
+          <button type="submit">&#128269;</button>
+        </form>
+      </div>
+      <div class="links">
+        <a href="/index.html">Go home</a>
+        <a href="/projects.html">My Projects</a>
+        <a href="/api/docs.html">API Documentation</a>
+      </div>
+    </nav>
+    <main id="main" style="text-align: left;">
+      <h2 id="1">API Documentation</h2>
+      <p>Base URL: <a href="https://nicholas1023.github.io/api/v1">https://nicholas1023.github.io/api/v1</a></p>
+      <div id="2">
+        <h3 style="margin: 0; margin-bottom: 5px;">Endpoints</h3>
+        <b>Method: GET</b>
+        <ul>
+          <li><code>/</code></a> Retrives a full list of projects.</li>
+          <li><code>/id1</code></a> Retrives project with ID 1.</li>
+          <li><code>/id2</code></a> Retrives project with ID 2.</li>
+          <li><code>/id3</code></a> Retrives project with ID 3.</li>
+          <li><code>/id4</code></a> Retrives project with ID 4.</li>
+        </ul>
+      </div>
+      <h3 id="3">Example Response</h3>
+      <pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;content xmlns="http://nicholas1023.github.io"&gt;
+    &lt;project&gt;
+        &lt;id&gt;Project ID&lt;/id&gt;
+        &lt;name&gt;Project name&lt;/name&gt;
+        &lt;url&gt;Repository or website URL&lt;/url&gt;
+        &lt;desc&gt;Short description about project&lt;/desc&gt;
+    &lt;/project&gt;
+&lt;/content&gt;</pre>
+      <h3 id="4">Error Response</h3>
+      <pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;content xmlns="http://nicholas1023.github.io"&gt;
+    &lt;error&gt;Code, Error message&lt;/error&gt;
+&lt;/content&gt;</pre>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>

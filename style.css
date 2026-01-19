@@ -120,7 +120,7 @@ main {
   border: 0;
 }
 
-pre, .code {
+pre, code {
   overflow: hidden;
   background-color: lightgray;
   border: 1px solid grey;
