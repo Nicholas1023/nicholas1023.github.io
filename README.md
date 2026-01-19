@@ -13,4 +13,3 @@ Visit my website at <a href="https://nicholas1023.github.io">https://nicholas102
 - Navigation bar
 - Responsive elements
 - Search bar
-- Uses system theme
