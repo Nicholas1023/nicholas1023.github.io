@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="https://nicholas1023.github.io/api schema.xsd"
-         xmlns="https://nicholas1023.github.io/api">
+<content>
     <project>
         <id>2</id>
         <name>1-bit Logic Gate Computer</name>
