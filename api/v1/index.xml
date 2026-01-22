@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<content xmlns="http://nicholas1023.github.io">
+<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://nicholas1023.github.io/api schema.xsd"
+         xmlns="https://nicholas1023.github.io/api">
     <project>
         <id>1</id>
         <name>My Personal Website</name>
