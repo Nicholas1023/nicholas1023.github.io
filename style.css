@@ -1,7 +1,7 @@
 html, body {
   display: flex;
   flex-direction: column;
-  font-family: 'system-ui', sans-serif;
+  font-family: 'lexend', sans-serif;
   background: linear-gradient(#9fd2fb, #a4d0ff);
   color: black;
   background-attachment: fixed;
@@ -127,6 +127,20 @@ pre, code {
   padding: 3px;
   border-radius: 5px;
   color: black
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 10px;
+  font-size: small;
+  bottom: 0;
+  text-align: start;
+}
+
+footer * {
+  margin: 0;
 }
 
 @media (max-width: 600px) {
