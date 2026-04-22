@@ -1,0 +1,22 @@
+* {
+    font-family: monospace;
+    background-color: black;
+    color: #a6edff;
+    margin: 0;
+}
+
+.input-contain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input {
+    all: unset;
+}
+
+p, input {
+    width: fit-content;
+    margin-top: 3px;
+    margin-left: 3px;
+}
