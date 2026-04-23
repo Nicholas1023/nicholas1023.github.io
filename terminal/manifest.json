@@ -1,0 +1,14 @@
+{
+    "name": "Nicholas' Terminal",
+    "start_url": "/terminal",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "icons": [
+        {
+            "src": "icon.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
