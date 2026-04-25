@@ -22,7 +22,7 @@ function listen() {
                 output.innerHTML = `'${promptInput.value.toLowerCase()}' is not a valid command. Enter 'help' to get started!`;
             }
             promptContain = document.createElement("div");
-            promptContain.innerHTML = `<p>Guest&gt;&gt;&nbsp;</p><input type="text" id="prompt${count}" autocomplete="off"></input>`;
+            promptContain.innerHTML = `<p>&gt;&gt;&nbsp;</p><input type="text" id="prompt${count}" autocomplete="off"></input>`;
             promptContain.className = "input-contain";
             promptContain.readOnly = false;
             document.body.appendChild(promptContain);
