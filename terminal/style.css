@@ -13,10 +13,9 @@
 
 input {
     all: unset;
+    flex: 1;
 }
 
 p, input {
     width: fit-content;
-    margin-top: 3px;
-    margin-left: 3px;
 }
