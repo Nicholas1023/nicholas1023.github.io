@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicholas' Website - Projects</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <nav>
-      <div class="site-title">
-        <a class="title-content" href="/">
-          <h1>Nicholas' Website!</h1>
-        </a>
-        <form class="search" id="search">
-          <p id="notFound" style="display: none; color: #fa2020; margin-right: 10px;">Not found!</p>
-          <input type="text" placeholder="Search" id="search-input">
-          <button type="submit">&#128269;</button>
-        </form>
-      </div>
-      <div class="links">
-        <a href="index.html">Go home</a>
-        <a href="projects.html">My Projects</a>
-        <a href="terminal/index.html">CLI Version</a>
-        <a href="/Nicholas-OS/">Nicholas' OS</a>
-        <a href="/macro-microcontroller-2/">Macro Microcontroller 2</a>
-      </div>
-    </nav>
-    <main id="main" style="text-align: left; max-width: 90ch;">
-      <h2 id="1" style="text-align: center;">My Projects!</h2>
-      <ul>
-        <li>
-          <h3 id="2"><a href="https://github.com/Nicholas1023/computer">1-bit Logic Gate Computer</a></h3>
-          <img style="width: 30%; height: 30%; border-radius: 0; border: 0" src="3D_View.png" alt="My PCB">
-          <p id="3">This is my first PCB, A 1-bit computer that uses NOR and NOT gates made from 3 transistors as its processor, 3 Push buttons as input, and 2 LEDs as output.</p>
-        </li>
-        <li>
-          <h3 id="4"><a href="https://github.com/Nicholas1023/macro-microcontroller-2">Macro Microcontroller 2</a></h3>
-          <img style="width: 50%; height: 50%; border-radius: 0; border: 0" src="/macro-microcontroller-2/assets/macro-microcontroller-2-transparent.png" alt="Macro Microcontroller 2">
-          <p id="5">A microcontroller and a macropad combined on a PCB which can be used for controlling GPIO pins or running user programs instead of sending input to your computer as a keyboard. <a href="/macro-microcontroller-2/">Visit documentation site</a>.</p>
-        </li>
-        <li>
-          <h3 id="6"><a href="https://github.com/Nicholas1023/editor">Nicholas' Code Editor</a></h3>
-          <img style="width: 50%; height: 50%; border-radius: 0; border: 0" src="https://raw.githubusercontent.com/Nicholas1023/editor/main/wide-screen.png" alt="Nicholas' Code Editor">
-          <p id="7">A simple HTML editor web app with an iframe renderer, open/save file, boilerplate HTML code insertion and sharing function. Try it out at <a href="https://editor.nicholaslim.me">https://editor.nicholaslim.me</a>!</p>
-        </li>
-        <li>
-          <h3 id="8"><a href="https://github.com/Nicholas1023/source-organiser">Source Organiser</a></h3>
-          <img style="width: 50%; height: 50%; border-radius: 0; border: 0" src="/source-organiser.png" alt="Source Organiser">
-          <p id="9">A user-friendly CLI file organiser for developers with more human-readable commands. Project URL: <a href="https://pypi.org/project/source-organiser">https://pypi.org/project/source-organiser</a></p>
-        </li>
-      </ul>
-    </main>
-    <script src="projects.js"></script>
-    <footer>
-      <p>&copy; 2026 Nicholas Lim. <a href="LICENSE.txt" target="_blank">View license</a>.</p>
-      <a href="https://github.com/Nicholas1023/nicholas1023.github.io" target="_blank">View Repository (Nicholas1023/nicholas1023.github.io)</a>
-    </footer>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nicholas' Website - Projects</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body id="body">
+        <nav>
+            <div class="site-title">
+                <a class="title-content" href="/">
+                    <h1>Nicholas' Website!</h1>
+                </a>
+                <form class="search" id="search">
+                    <p id="notFound" style="display: none; color: #fa2020; margin-right: 10px;">Not found!</p>
+                    <input type="text" placeholder="Search" id="search-input">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div class="links">
+                <a href="/">Home</a>
+                <b><a href="projects.html">Projects</a></b>
+                <a href="resources.html">Resources</a>
+            </div>
+        </nav>
+        <main>
+            <h1>My Projects</h1>
+            <div class="main-content">
+                <div class="project">
+                    <h2><a href="https://github.com/Nicholas1023/computer" target="_blank">1-Bit Logic Gate Computer</a></h2>
+                    <img src="assets/3D_View.png" height="25%" width="25%">
+                    <p>My first PCB, A 1-bit computer that uses NOR and NOT gates made from 3 transistors as its processor, 3 Push buttons as input, and 2 LEDs as output.</p>
+                </div>
+                <div class="project">
+                    <h2><a href="https://github.com/Nicholas1023/macro-microcontroller-2" target="_blank">Macro Microcontroller Series</a></h2>
+                    <img src="https://nicholaslim.me/macro-microcontroller-2/assets/macro-microcontroller-2-transparent.png" height="40%" width="40%">
+                    <p>Custom microcontroller development boards with an integrated macropad which provides GPIO controls with keyboard keys on a single PCB, plus a custom BASIC interpreter and disk operating system. Read more at <a href="https://nicholaslim.me/macro-microcontroller-2" target="_blank">https://nicholaslim.me/macro-microcontroller-2</a>.</p>
+                </div>
+                <div class="project">
+                    <h2><a href="https://github.com/Nicholas1023/editor" target="_blank">Nicholas' Code Editor</a></h2>
+                    <img src="assets/editor.png" height="50%" width="50%">
+                    <p>A simple HTML editor web app with an iframe renderer, open/save file, boilerplate HTML code insertion and sharing function. Try it out at <a href="https://editor.nicholaslim.me" target="_blank">https://editor.nicholaslim.me</a>!</p>
+                </div>
+                <div class="project">
+                    <h2><a href="https://github.com/Nicholas1023/new-tab" target="_blank">Custom New Tab</a></h2>
+                    <img src="https://github.com/Nicholas1023/new-tab/blob/main/image.png?raw=true" height="50%" width="50%">
+                    <p>My custom new tab, with a simple and minimalistic page, search engine selection and URL pin creation. Try it out at <a href="https://nicholaslim.me/new-tab" target="_blank">https://nicholaslim.me/new-tab</a>!</p>
+                </div>
+                <div class="project">
+                    <h2><a href="https://github.com/Nicholas1023/source-organiser" target="_blank">Source Organiser</a></h2>
+                    <img src="assets/source-organiser.png" height="50%" width="50%">
+                    <p>My user-friendly CLI file organiser for developers, with more human-readable commands. Project URL: <a href="https://pypi.org/project/source-organiser" target="_blank">https://pypi.org/project/source-organiser</a></p>
+                </div>
+            </div>
+        </main>
+        <footer>
+          <p>&copy; 2026 Nicholas Lim.</p>
+          <p><a href="mailto:nicholas_lim@bbsshack.club" target="_blank"><i class="fa-solid fa-envelope" style="color: white;"></i>nicholas_lim@bbsshack.club</a> | <a href="https://github.com/Nicholas1023" target="_blank"><i class="fa-brands fa-github" style="color: white;"></i>Nicholas1023</a></p>
+        </footer>
+        <script src="https://kit.fontawesome.com/c13c173d03.js" crossorigin="anonymous"></script>
+        <script src="search.js"></script>
+    </body>
 </html>

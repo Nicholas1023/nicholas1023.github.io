@@ -1,80 +1,89 @@
-html, body {
-  display: flex;
-  flex-direction: column;
-  font-family: 'lexend', sans-serif;
-  background: linear-gradient(#9fd2fb, #a4d0ff);
-  color: black;
-  background-attachment: fixed;
+* {
   padding: 0;
   margin: 0;
-  min-height: 100dvh;
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+  min-height: 100dvh;
+  font-family: 'Lexend', system-ui, sans-serif;
+  font-size: 16px;
+  color: #e7e8ee;
+  background-color: #191f23;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 80dvw;
+  align-self: center;
+  align-items: center;
+}
+
+.main-content {
+  max-width: 80ch;
+}
+
+main * {
+  margin: 5px;
 }
 
 a {
-  color: #004cff;
+  color: #70bbd6;
+  text-decoration: none;
+}
+
+a, b, code {
+  margin: 0;
 }
 
 a:hover {
-  color: #003d9e;
-}
-
-button {
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-  font-size: 3ch;
-}
-
-.search, .title-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-}
-
-input {
-  border-radius: 10px;
-  border: 1px solid grey;
-  height: 3.5ch;
-  padding-left: 10px;
-}
-
-img {
-  border-radius: 10px;
-  border: 1px solid black;
-  margin-bottom: 10px;
+  color: #a0c8e9;
 }
 
 nav {
   position: sticky;
   top: 0;
   color: black;
-  padding-bottom: 10px;
+  padding: 12px 24px;
   box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
-  background-color: #9fd2fb;
+  background-color: rgba(25, 31, 35, 0.95);
+  z-index: 1000;
 }
 
 nav h1 {
   padding-left: 10px;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-.title-content {
-  color: black;
+nav h1, .project {
+  transition: transform 150ms ease;
+}
+
+nav h1:hover, .project:hover {
+  transform: translateY(-4px);
 }
 
 .site-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid black;
   margin: 5px;
   margin-bottom: 10px;
-}
-
-.site-title h1 {
-  font-size: 1.5rem;
 }
 
 .links {
@@ -84,49 +93,7 @@ nav h1 {
 
 .links a {
   text-decoration: none;
-  padding-left: 15px;
-}  
-
-main {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  flex: 1;
-}
-
-.go-home {
-  cursor: pointer;
-  padding: 10px 20px;
-  background-color: #008afb;
-  color: black;
-  border-radius: 5px;
-  text-decoration: none;
-  text-align: center;
-}
-
-.go-home:hover {
-  text-decoration: none;
-  color: black;
-  background-color: #005ca8;
-}
-
-.result {
-  background-color: #b5b158;
-  border-radius: 5px;
-}
-
-.preview {
-  border-radius: 0;
-  border: 0;
-}
-
-pre, code {
-  overflow: hidden;
-  background-color: lightgray;
-  border: 1px solid grey;
-  padding: 3px;
-  border-radius: 5px;
-  color: black
+  margin-left: 15px;
 }
 
 footer {
@@ -134,9 +101,12 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   padding: 5px 10px;
-  font-size: small;
-  bottom: 0;
+  font-size: smaller;
+  margin-top: auto;
   text-align: start;
+  bottom: 0;
+  background-color: rgba(25, 31, 35, 0.95);
+  position: sticky;
 }
 
 footer * {
@@ -158,18 +128,48 @@ footer * {
   }
 }
 
-::-webkit-scrollbar {
-  background-color: #9fd2fb;
-  width: 15px;
-  border-left: 1px solid rgb(100, 100, 100);
+button {
+  border: none;
+  font-size: large;
+  margin-left: 5px;
+  cursor: pointer;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: #5789ff;
-  border: 1px solid rgb(100, 100, 100);
-  border-radius: 5px;
+nav button {
+  background-color: rgba(0, 0, 0, 0);
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background-color: #5c9bff;
+.project button {
+  font-size: smaller;
+  margin: 0 2px;
+  border-radius: 2px;
+}
+
+.project button:hover {
+  font-size: smaller;
+  margin: 0 2px;
+  border-radius: 2px;
+  background-color: darkgray;
+}
+
+form input {
+  border: none;
+  border-radius: 10px;
+  height: 1.75rem;
+  padding: 0.5rem;
+  font-family: 'Lexend', system-ui, sans-serif;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  border-radius: 16px;
+  margin-bottom: 10px;
 }
