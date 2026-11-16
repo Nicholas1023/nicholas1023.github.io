@@ -3,7 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nicholas' Website!</title>
+        <meta property="og:title" content="Nicholas Lim - Student Software & Hardware Developer">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Explore my personal software projects, hardware designs and documentation.">
+        <meta property="og:image" content="https://nicholaslim.me/assets/banner.png">
+        <meta property="og:site_name" content="Nicholas Lim's Portfolio">
+        <title>Nicholas Lim's Portfolio</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     </head>
@@ -11,11 +16,11 @@
         <nav>
             <div class="site-title">
                 <a class="title-content" href="/">
-                    <h1>Nicholas' Website!</h1>
+                    <h1>Nicholas Lim's Portfolio</h1>
                 </a>
                 <form class="search" id="search">
                     <p id="notFound" style="display: none; color: #fa2020; margin-right: 10px;">Not found!</p>
-                    <input type="text" placeholder="Search" id="search-input">
+                    <input type="text" placeholder="Search (Ctrl+K)" id="search-input">
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>
@@ -26,13 +31,44 @@
             </div>
         </nav>
         <main>
-            <h1>Hello! I am Nicholas Lim!</h1>
             <div class="main-content">
-                <p>I am a student at Bukit Batok Secondary School and I have a strong passion for programming and designing hardware projects, ranging from creating websites to developing custom microcontroller boards.</p>
+                <h1 style="text-align: center;">Hey there! I am Nicholas Lim!</h1>
+                <p style="text-align: center;">A student with a strong passion for programming and designing hardware projects, ranging from creating websites to developing custom microcontroller boards.</p>
+                <h2 style="text-align: center;">About Me</h2>
+                <p>I'm a student at Bukit Batok Secondary School, where I serve as vice-president of the Student Council. I also co-lead <a href="https://bbsshack.club" target="_blank">BBSS Hack Club</a>, an interest group part of <a href="https://hackclub.com">Hack Club</a>. I work on <a href="projects.html">personal software and hardware projects</a> and learn new programming languages in my free time.</p>
             </div>
+            <h2>My Skills</h2>
+            <div class="skills">
+                <div class="skills-contain">
+                    <h3>Programming Languages</h3>
+                    <span>Embedded C/C++</span>
+                    <span>Python</span>
+                    <span>Shell Script</span>
+                    <span>Assembly</span>
+                </div>
+                <div class="skills-contain">
+                    <h3>Web Development</h3>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skills-contain">
+                    <h3>Hardware Development</h3>
+                    <span>PCB Design</span>
+                    <span>CAD Design</span>
+                </div>
+            </div>
+            <h2>Programming Activity</h2>
+            <a href="https://heatmap.shymike.dev?id=583&timezone=Asia%2FSingapore&labels=true&standalone=true" title="Click to view detailed data for each day!">
+                <picture>
+                    <source media="(prefers-color-scheme: dark)" srcset="https://heatmap.shymike.dev?id=583&timezone=Asia%2FSingapore&labels=true&theme=dark">
+                    <img alt="Hackatime activity heatmap" src="https://heatmap.shymike.dev?id=583&timezone=Asia%2FSingapore&labels=true&theme=light">
+                </picture>
+            </a>
+            <img src="https://github-readme-stats.hackclub.dev/api/wakatime?username=583&api_domain=hackatime.hackclub.com&theme=dark&custom_title=Hackatime+Stats&layout=compact&cache_seconds=0&langs_count=8">
         </main>
         <footer>
-            <p>&copy; 2026 Nicholas Lim.</p>
+            <p>Copyright &copy; 2026 Nicholas Lim.</p>
             <p><a href="mailto:nicholas_lim@bbsshack.club" target="_blank"><i class="fa-solid fa-envelope" style="color: white;"></i>nicholas_lim@bbsshack.club</a> | <a href="https://github.com/Nicholas1023" target="_blank"><i class="fa-brands fa-github" style="color: white;"></i>Nicholas1023</a></p>
         </footer>
         <script src="https://kit.fontawesome.com/c13c173d03.js" crossorigin="anonymous"></script>

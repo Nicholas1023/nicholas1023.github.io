@@ -1,5 +1,5 @@
-# My Personal Website!
-Hello! Welcome to my personal website's repository!
+# My Portfolio Website
+Hello! Welcome to my portfolio website's repository!
 Visit my website at <a href="https://nicholas1023.github.io">https://nicholas1023.github.io</a>!
 
 ## Pages

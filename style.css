@@ -70,11 +70,11 @@ nav h1 {
   font-weight: 600;
 }
 
-nav h1, .project {
+nav h1, .project, span {
   transition: transform 150ms ease;
 }
 
-nav h1:hover, .project:hover {
+nav h1:hover, .project:hover, span:hover {
   transform: translateY(-4px);
 }
 
@@ -167,9 +167,26 @@ form input {
   align-items: center;
 }
 
-.project {
+.project, span {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 5px;
   border-radius: 16px;
   margin-bottom: 10px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+span {
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.skills-contain {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }

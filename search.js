@@ -8,7 +8,7 @@ const index = [
         "url": "/projects.html"
     },
     {
-        "keyword": ["datasheet", "documentation", "download", "compiled" , "app"],
+        "keyword": ["datasheet", "documentation", "docs", "guide", "download", "compiled" , "app"],
         "url": "/resources.html"
     }
 ]
@@ -32,4 +32,11 @@ function search() {
 document.getElementById("search").addEventListener("submit", function(e) {
     e.preventDefault();
     search();
+});
+
+document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        document.getElementById("search-input").focus();
+    }
 });
