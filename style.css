@@ -210,4 +210,8 @@ span {
   .footer-section {
     flex-direction: column;
   }
+
+  .footer-section p {
+    text-align: center;
+  }
 }
