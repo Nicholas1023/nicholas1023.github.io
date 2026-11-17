@@ -70,14 +70,6 @@ nav h1 {
   font-weight: 600;
 }
 
-.project, span {
-  transition: transform 150ms ease;
-}
-
-.project:hover, span:hover {
-  transform: translateY(-4px);
-}
-
 .site-title {
   display: flex;
   align-items: center;
