@@ -8,8 +8,8 @@ const index = [
         "url": "/projects.html"
     },
     {
-        "keyword": ["datasheet", "documentation", "docs", "guide", "download", "compiled" , "app"],
-        "url": "/resources.html"
+        "keyword": ["datasheet", "documentation", "docs", "guide", "download", "compiled" , "app", "release", "packaged"],
+        "url": "/releases.html"
     }
 ]
 
