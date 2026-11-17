@@ -105,14 +105,15 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 5px;
+  margin: 2px;
 }
 
 .top-button {
   background-color: #70bbd6;
   color:#191f23;
   border-radius: 5px;
-  padding: 2px;
+  padding: 5px;
+  font-size: smaller;
 }
 
 .top-button:hover {

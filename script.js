@@ -40,3 +40,25 @@ document.addEventListener('keydown', function(e) {
         document.getElementById("search-input").focus();
     }
 });
+
+async function getCommitHash() {
+    const API_URL = "https://api.github.com/repos/Nicholas1023/nicholas1023.github.io/commits/main";
+    try {
+        const response = await fetch(API_URL, {
+            method: "GET",
+            headers: {
+                "Accept": "application/vnd.github.sha"
+            }
+        })
+
+        if (!response.ok) {
+            document.getElementById("commit").innerHTML += "hash API request failed.";
+        }
+        const hash = (await response.text()).slice(0, 7);
+        document.getElementById("commit").innerHTML += `<a href="https://github.com/Nicholas1023/nicholas1023.github.io/commit/${hash}">${hash}</a>`;
+    } catch (error) {
+        document.getElementById("commit").innerHTML += "hash API request failed.";
+    }
+}
+
+getCommitHash();
