@@ -55,7 +55,7 @@ async function getCommitHash() {
             document.getElementById("commit").innerHTML += "hash API request failed.";
         }
         const hash = (await response.text()).slice(0, 7);
-        document.getElementById("commit").innerHTML += `<a href="https://github.com/Nicholas1023/nicholas1023.github.io/commit/${hash}">${hash}</a>`;
+        document.getElementById("commit").innerHTML += `<a href="https://github.com/Nicholas1023/nicholas1023.github.io/commit/${hash}" target="_blank">${hash} <i class="fa-solid fa-arrow-up-right-from-square"></i></a>`;
     } catch (error) {
         document.getElementById("commit").innerHTML += "hash API request failed.";
     }
