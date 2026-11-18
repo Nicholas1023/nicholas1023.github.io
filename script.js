@@ -1,6 +1,6 @@
 const index = [
     {
-        "keyword": ["about", "homepage",],
+        "keyword": ["about", "homepage", "achievements"],
         "url": "/"
     },
     {
